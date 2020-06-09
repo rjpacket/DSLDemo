@@ -1,0 +1,59 @@
+{
+  "contextName": "home",
+  "layout": {
+    "name": "VLL",
+    "children": [
+      {
+        "name": "TV",
+        "content": "打开页面",
+        "color": "#333333",
+        "size": "16",
+        "action": {
+          "name": "open",
+          "nextPage": {
+            "contextName": "detail",
+            "layout": {
+              "name": "VLL",
+              "children": [
+                {
+                  "name": "IV",
+                  "width": "100",
+                  "height": "100",
+                  "url": "https://bugly.qq.com/v2/image?id=2c06cba9-7d27-4f1c-8b0d-b932c33deaf3"
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "name": "TV",
+        "content": "弹出Toast",
+        "color": "#333333",
+        "size": "16",
+        "action": {
+          "name": "toast",
+          "msg": "点击了一下，弹出一个toast"
+        }
+      },
+      {
+        "name": "TV",
+        "content": "请求网络",
+        "color": "#333333",
+        "size": "16",
+        "value": "a",
+        "action": {
+          "name": "request",
+          "url": "https://www.rjp.com?login",
+          "params": {
+            "age": "18",
+            "sex": "male"
+          },
+          "action": {
+            "name": "setData"
+          }
+        }
+      }
+    ]
+  }
+}

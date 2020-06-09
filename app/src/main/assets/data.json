@@ -1,0 +1,97 @@
+{
+  "contextName": "home",
+  "layout": {
+    "name": "VLL",
+    "children": [
+      {
+        "name": "TV",
+        "content": "TEST",
+        "color": "#333333",
+        "size": "16",
+        "value": "a",
+        "action": {
+          "name": "open",
+          "nextPage": {
+            "contextName": "detail",
+            "layout": {
+              "name": "VLL",
+              "children": [
+                {
+                  "name": "TV",
+                  "content": "DETAIL TEST 1",
+                  "color": "#333333",
+                  "size": "16",
+                  "value": "a",
+                  "action": {
+                    "name": "toast",
+                    "msg": "click test 1"
+                  }
+                },
+                {
+                  "name": "TV",
+                  "content": "DETAIL TEST 2",
+                  "color": "#333333",
+                  "size": "16",
+                  "value": "b",
+                  "action": {
+                    "name": "request",
+                    "url": "https://bugly.qq.com/v2/image?id=2c06cba9-7d27-4f1c-8b0d-b932c33deaf3",
+                    "params": {
+                      "name": "rjp",
+                      "age": "18"
+                    },
+                    "action": {
+                      "name": "setListData"
+                    }
+                  }
+                },
+                {
+                  "name": "LV",
+                  "id": "homeLV",
+                  "children": [
+                    {
+                      "name": "HLL",
+                      "itemType": "0",
+                      "children": [
+                        {
+                          "name": "IV",
+                          "width": "200",
+                          "height": "200",
+                          "value": "a"
+                        },
+                        {
+                          "name": "VLL",
+                          "children": [
+                            {
+                              "name": "TV",
+                              "value": "b"
+                            },
+                            {
+                              "name": "TV",
+                              "value": "c"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            "actions": []
+          }
+        }
+      },
+      {
+        "name": "IV",
+        "width": "100",
+        "height": "100",
+        "value": "b",
+        "url": "https://bugly.qq.com/v2/image?id=2c06cba9-7d27-4f1c-8b0d-b932c33deaf3"
+      }
+    ]
+  },
+  "actions": [
+
+  ]
+}
